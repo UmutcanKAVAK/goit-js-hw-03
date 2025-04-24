@@ -1,9 +1,8 @@
 const makeArray = (firstArray, secondArray, maxLength) => {
     const array = firstArray.concat(secondArray);
-    console.log(array.slice(0, maxLength))
+    return array.slice(0, maxLength);
 }
 
-//TESTING BELOW
 console.log(makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3)); // ["Mango", "Poly", "Ajax"]console.log(makeArray(["Mango", "Poly"], ["Ajax", "Chelsea"], 3)); // ["Mango", "Poly", "Ajax"]
 console.log(makeArray(["Mango", "Poly", "Houston"], ["Ajax", "Chelsea"], 4)); // ["Mango", "Poly", "Houston", "Ajax"]
 console.log(makeArray(["Mango"], ["Ajax", "Chelsea", "Poly", "Houston"], 3)); // ["Mango", "Ajax", "Chelsea"]
@@ -11,4 +10,3 @@ console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 2)); // ["Ear
 console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 4)); // ["Earth", "Jupiter", "Neptune", "Uranus"]
 console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0)); // []
 
-//so ez :)
